@@ -1,5 +1,6 @@
 import org.apache.commons.lang3.time.StopWatch;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -8,54 +9,61 @@ public class Main {
 
     static Random random = new Random();
     static StopWatch stopWatch = new StopWatch();
+    static DecimalFormat format = new DecimalFormat("#.#################");
 
 
     public static void main(String[] args) {
 
-        int[] wygenerowany;
+        int[] wygenerowany1;
+        int[] wygenerowany2;
+        wygenerowany1 = generujCiag(random, 6);
+        wygenerowany2 = wygenerowany1.clone();
 
-        wygenerowany = generujCiag(random, 10);
+        int[] test1 = {90, 63, 42, 93, 96, 41};
+        int[] test2 = {6, 5, 3, 1, 8, 7, 2, 4};
+        int[] test = {6, 4, 1, 9, 5, 3};
+
         System.out.println("Wygenerowany: ");
-        drukujListe(wygenerowany);
-        System.out.println("-----------------------");
+        drukujListe(wygenerowany1);
+        System.out.println();
 
-        int[] posortowane;
+        System.out.println("Z prezentacji: ");
+        drukujListe(test);
+        System.out.println();
 
-        stopWatch.start();
-        posortowane = wybieranieSort(wygenerowany);
-        stopWatch.stop();
-        System.out.println("Function time: " + stopWatch.getTime(TimeUnit.MILLISECONDS));
-        System.out.println("Wybieranie: ");
-        drukujListe(posortowane);
-        stopWatch.reset();
 
-        stopWatch.start();
-        posortowane = wstawianieSort(wygenerowany);
-        stopWatch.stop();
-        System.out.println("Function time: " + stopWatch.getTime(TimeUnit.MILLISECONDS));
-        System.out.println("Wybieranie: ");
-        drukujListe(posortowane);
+        wybieranieSort(test.clone());
+
+
+        System.out.println();
+
+
+        wstawianieSort(test.clone());
 
 
     }
 
+
+    private static double convertTimeToSeconds(long time) {
+        return 1.0 * (time) / 1000000000;
+    }
+
     private static int[] generujCiag(Random rnd, int size) {
-        int[] tmp = new int[size + 1];
-        tmp[0] = 0;
-        for (int i = 1; i < size + 1; i++) {
-            int tmp_int = rnd.nextInt(100) + 1;
+        int[] tmp = new int[size];
+
+        for (int i = 0; i < size; i++) {
+            int tmp_int = rnd.nextInt(100) + i % 2;
             tmp[i] = tmp_int;
         }
         return tmp;
     }
 
     private static int[] generujCiagSpecjalny(Random rnd, int first_element, int size, boolean direction) {
-        int[] tmp = new int[size + 1];
-        tmp[0] = 0;
-        tmp[1] = first_element;
+        int[] tmp = new int[size];
+        tmp[0] = first_element;
 
         int tmp_int = 0;
-        for (int i = 2; i < size + 1; i++) {
+        for (int i = 1; i < size + 1; i++) {
             if (direction) {
                 tmp_int = tmp[i - 1] + rnd.nextInt(15) + i % 2;
             } else if (!direction) {
@@ -74,37 +82,79 @@ public class Main {
         System.out.print("]\n");
     }
 
-    private static int[] wybieranieSort(int[] ciag) {
-        int[] tmp = ciag;
-        for (int i = 1; i < tmp.length - 1; i++) {
-            int k = i;
-            for (int j = i + 1; j < tmp.length; j++) {
-                if (tmp[j] < tmp[k]) {
-                    k = j;
+    private static void wybieranieSort(int[] ciag) {
+        int porownania = 0;
+        int przesuniecia = 0;
+        int[] array = ciag;
+
+        //start stopwatch
+        stopWatch.start();
+
+        for (int i = 0; i < array.length - 1; i++) {
+            int min_index = i;
+
+            for (int j = i + 1; j < array.length; j++) {
+
+                if (array[j] <= array[min_index]) {
+
+                    min_index = j;
+
                 }
+                porownania++;
             }
-            int x = tmp[k];
-            tmp[k] = tmp[i];
-            tmp[i] = x;
+
+            przesuniecia++;
+            int x = array[min_index];
+
+            array[min_index] = array[i];
+            array[i] = x;
+
         }
-        return tmp;
+
+
+        stopWatch.stop();
+        System.out.println("Sortowanie przez WYBIERANIE: ");
+        System.out.print("[Function time: " + stopWatch.getTime(TimeUnit.MILLISECONDS) + " ms");
+        System.out.print(" | Porownania: " + porownania);
+        System.out.print(" | Przesuniecia: " + przesuniecia);
+        System.out.print("]\n");
+        drukujListe(array);
+        stopWatch.reset();
+
     }
 
-    private static int[] wstawianieSort(int[] ciag) {
-        int[] tmp = ciag;
+    private static void wstawianieSort(int[] ciag) {
+        int porownania = 0;
+        int przesuniecia = 0;
+        int[] array = ciag;
 
-        for (int i = 1; i < ciag.length; i++) {
-            int x = ciag[i];
-            ciag[0] = x;
-            int j = i;
-            while (x < ciag[j - 1]) {
-                ciag[j] = ciag[j - 1];
+        //start stopwatch
+        stopWatch.start();
+
+        for (int i = 1; i < array.length; i++) {
+            int key = array[i];
+            int j = i - 1;
+
+            while (j >= 0 && array[j] > key) {
+
+                przesuniecia++;
+                array[j + 1] = array[j];
+
+
                 j = j - 1;
             }
-            ciag[j] = x;
+            System.out.println(przesuniecia);
+            array[j + 1] = key;
         }
 
 
-        return tmp;
+        stopWatch.stop();
+        System.out.println("Sortowanie przez WSTAWIANIE: ");
+        System.out.print("[Function time: " + stopWatch.getTime(TimeUnit.MILLISECONDS) + " ms");
+        System.out.print(" | Porownania: " + porownania);
+        System.out.print(" | Przesuniecia: " + przesuniecia);
+        System.out.print("]\n");
+        drukujListe(array);
+        stopWatch.reset();
     }
 }

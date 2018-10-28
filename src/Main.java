@@ -16,14 +16,15 @@ public class Main {
 
         int[] wygenerowany1;
         int[] wygenerowany2;
-        wygenerowany1 = generujCiag(random, 10);
+        wygenerowany1 = generujCiag(random, 100000);
         wygenerowany2 = wygenerowany1.clone();
 
         int[] test1 = {90, 63, 42, 93, 96, 41};
         int[] test2 = {6, 5, 3, 1, 8, 7, 2, 4};
         int[] test23 = {6, 5, 10, 3, 1, 8, 7, 2, 4, 9};
-        int[] test111 = {6, 4, 1, 9, 5, 3};
-        int[] test = {3, 4, 1, 2, 0};
+        int[] test44 = {6, 4, 1, 9, 5, 3};
+        int[] test11 = {3, 4, 1, 2, 0};
+        int[] test = wygenerowany1.clone();
 
         System.out.println("Wygenerowany: ");
         drukujListe(wygenerowany1);
@@ -42,6 +43,9 @@ public class Main {
 
         wstawianieSort(test.clone());
 
+        System.out.println();
+
+        bubbleSort(test.clone());
 
     }
 
@@ -92,25 +96,17 @@ public class Main {
         //start stopwatch
         stopWatch.start();
 
+        //sortowanie
         for (int i = 0; i < array.length - 1; i++) {
             int min_index = i;
-
             for (int j = i + 1; j < array.length; j++) {
-
                 if (array[j] <= array[min_index]) {
-
                     min_index = j;
-                    przesuniecia++;
                 }
-                porownania++;
             }
-
-            przesuniecia++;
             int x = array[min_index];
-
             array[min_index] = array[i];
             array[i] = x;
-
         }
 
 
@@ -133,29 +129,53 @@ public class Main {
         //start stopwatch
         stopWatch.start();
 
+        //sortowanie
         for (int i = 1; i < array.length; i++) {
             int key = array[i];
             int j = i - 1;
-
-            //if(j > 1) przesuniecia++;
             while (j >= 0 && array[j] > key) {
-
-                przesuniecia++;
                 array[j + 1] = array[j];
-
-
                 j = j - 1;
-                if (j > 1) przesuniecia++;
             }
-            przesuniecia++;
-
             array[j + 1] = key;
-            //przesuniecia++;
         }
 
 
         stopWatch.stop();
         System.out.println("Sortowanie przez WSTAWIANIE: ");
+        System.out.print("[Function time: " + stopWatch.getTime(TimeUnit.MILLISECONDS) + " ms");
+        System.out.print(" | Porownania: " + porownania);
+        System.out.print(" | Przesuniecia: " + przesuniecia);
+        System.out.print("]\n");
+        drukujListe(array);
+        stopWatch.reset();
+    }
+
+    private static void bubbleSort(int[] ciag) {
+        int porownania = 0;
+        int przesuniecia = 0;
+        int[] array = ciag;
+
+        //start stopwatch
+        stopWatch.start();
+
+        //sortowanie
+
+        int temp = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 1; j < (array.length - i); j++) {
+                if (array[j - 1] > array[j]) {
+                    temp = array[j - 1];
+                    array[j - 1] = array[j];
+                    array[j] = temp;
+                }
+
+            }
+        }
+    
+
+        stopWatch.stop();
+        System.out.println("Sortowanie przez BĄBELKOWE: ");
         System.out.print("[Function time: " + stopWatch.getTime(TimeUnit.MILLISECONDS) + " ms");
         System.out.print(" | Porownania: " + porownania);
         System.out.print(" | Przesuniecia: " + przesuniecia);

@@ -16,12 +16,14 @@ public class Main {
 
         int[] wygenerowany1;
         int[] wygenerowany2;
-        wygenerowany1 = generujCiag(random, 6);
+        wygenerowany1 = generujCiag(random, 10);
         wygenerowany2 = wygenerowany1.clone();
 
         int[] test1 = {90, 63, 42, 93, 96, 41};
         int[] test2 = {6, 5, 3, 1, 8, 7, 2, 4};
-        int[] test = {6, 4, 1, 9, 5, 3};
+        int[] test23 = {6, 5, 10, 3, 1, 8, 7, 2, 4, 9};
+        int[] test111 = {6, 4, 1, 9, 5, 3};
+        int[] test = {3, 4, 1, 2, 0};
 
         System.out.println("Wygenerowany: ");
         drukujListe(wygenerowany1);
@@ -98,7 +100,7 @@ public class Main {
                 if (array[j] <= array[min_index]) {
 
                     min_index = j;
-
+                    przesuniecia++;
                 }
                 porownania++;
             }
@@ -135,6 +137,7 @@ public class Main {
             int key = array[i];
             int j = i - 1;
 
+            //if(j > 1) przesuniecia++;
             while (j >= 0 && array[j] > key) {
 
                 przesuniecia++;
@@ -142,9 +145,12 @@ public class Main {
 
 
                 j = j - 1;
+                if (j > 1) przesuniecia++;
             }
-            System.out.println(przesuniecia);
+            przesuniecia++;
+
             array[j + 1] = key;
+            //przesuniecia++;
         }
 
 

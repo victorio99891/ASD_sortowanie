@@ -172,7 +172,7 @@ public class Main {
 
             }
         }
-    
+
 
         stopWatch.stop();
         System.out.println("Sortowanie przez BĄBELKOWE: ");

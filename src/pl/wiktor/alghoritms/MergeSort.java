@@ -22,11 +22,11 @@ public class MergeSort {
 
         stopWatch.stop();
         System.out.println("Sortowanie przez SCALANIE: ");
-        System.out.print("[Function time: " + stopWatch.getTime(TimeUnit.MILLISECONDS) + " ms");
-        System.out.print(" | Porownania: " + porownania);
-        System.out.print(" | Przesuniecia: " + przesuniecia);
+        System.out.print("[Function time: " + stopWatch.getTime(TimeUnit.MILLISECONDS) + " ms" + " =  " + stopWatch.getTime(TimeUnit.SECONDS) + " s");
+        //System.out.print(" | Porownania: " + porownania);
+        //System.out.print(" | Przesuniecia: " + przesuniecia);
         System.out.print("]\n");
-        printer.drukujListe(array);
+        //printer.drukujSprawdzenie(array);
         stopWatch.reset();
     }
 

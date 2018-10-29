@@ -8,7 +8,7 @@ public class ArrayGenerator {
         int[] tmp = new int[size];
 
         for (int i = 0; i < size; i++) {
-            int tmp_int = rnd.nextInt(113) + rnd.nextInt(31) + 1;
+            int tmp_int = rnd.nextInt(4532) + 1;
             tmp[i] = tmp_int;
         }
         return tmp;

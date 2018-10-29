@@ -1,0 +1,292 @@
+
+
+CIAG LICZBOWY n = 10:
+LOSOWY:
+[ 2214 893 3959 1270 1806 105 3595 28 4029 1985 ] n = 10 
+NIEMALEJACY:
+[ 28 105 893 1270 1806 1985 2214 3595 3959 4029 ] n = 10 
+NIEROSNACY:
+[ 4029 3959 3595 2214 1985 1806 1270 893 105 28 ] n = 10 
+
+
+CIAG LICZBOWY n = 1.000:
+LOSOWY:
+[ 3829 2893 280 4352 1840 672 2669 1736 4193 1802 ... ] n = 1000 
+NIEMALEJACY:
+[ 1 1 14 15 16 22 24 26 27 37 ... ] n = 1000 
+NIEROSNACY:
+[ 4530 4529 4527 4511 4499 4464 4460 4455 4452 4445 ... ] n = 1000 
+
+
+CIAG LICZBOWY n = 100.000:
+LOSOWY:
+[ 3829 2893 280 4352 1840 672 2669 1736 4193 1802 ... ] n = 100000 
+NIEMALEJACY:
+[ 1 1 1 1 1 1 1 1 1 1 ... ] n = 100000 
+NIEROSNACY:
+[ 4530 4529 4527 4511 4499 4464 4460 4455 4452 4445 ... ] n = 100000 
+
+
+
+
+===================================================================================
+
+
+
+
+SORTOWANIE CI乎U n = 10
+
+++++++++++++++++++++++++++++++++++  NIEMALEJ丘Y ++++++++++++++++++++++++++++++++++:
+
+Sortowanie przez WSTAWIANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez WYBIERANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez B且ELKOWE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez SCALANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[left]: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[(left+right)/2]: 
+[Function time: 0 ms =  0 s]
+
+
+++++++++++++++++++++++++++++++++++  LOSOWY +++++++++++++++++++++++++++++++++++++++:
+
+Sortowanie przez WSTAWIANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez WYBIERANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez B且ELKOWE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez SCALANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[left]: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[(left+right)/2]: 
+[Function time: 0 ms =  0 s]
+
+
+++++++++++++++++++++++++++++++++++  NIEROSN丘Y ++++++++++++++++++++++++++++++++++:
+
+Sortowanie przez WSTAWIANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez WYBIERANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez B且ELKOWE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez SCALANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[left]: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[(left+right)/2]: 
+[Function time: 0 ms =  0 s]
+
+
+
+
+===================================================================================
+
+
+
+
+SORTOWANIE CI乎U n = 1.000
+
+++++++++++++++++++++++++++++++++++  NIEMALEJ丘Y ++++++++++++++++++++++++++++++++++:
+
+Sortowanie przez WSTAWIANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez WYBIERANIE: 
+[Function time: 4 ms =  0 s]
+
+
+Sortowanie przez B且ELKOWE: 
+[Function time: 4 ms =  0 s]
+
+
+Sortowanie przez SCALANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[left]: 
+[Function time: 17 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[(left+right)/2]: 
+[Function time: 1 ms =  0 s]
+
+
+++++++++++++++++++++++++++++++++++  LOSOWY +++++++++++++++++++++++++++++++++++++++:
+
+Sortowanie przez WSTAWIANIE: 
+[Function time: 3 ms =  0 s]
+
+
+Sortowanie przez WYBIERANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez B且ELKOWE: 
+[Function time: 13 ms =  0 s]
+
+
+Sortowanie przez SCALANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[left]: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[(left+right)/2]: 
+[Function time: 0 ms =  0 s]
+
+
+++++++++++++++++++++++++++++++++++  NIEROSN丘Y ++++++++++++++++++++++++++++++++++:
+
+Sortowanie przez WSTAWIANIE: 
+[Function time: 11 ms =  0 s]
+
+
+Sortowanie przez WYBIERANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez B且ELKOWE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez SCALANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[left]: 
+[Function time: 11 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[(left+right)/2]: 
+[Function time: 0 ms =  0 s]
+
+
+
+
+===================================================================================
+
+
+
+
+SORTOWANIE CI乎U n = 100.000
+
+++++++++++++++++++++++++++++++++++  NIEMALEJ丘Y ++++++++++++++++++++++++++++++++++:
+
+Sortowanie przez WSTAWIANIE: 
+[Function time: 2 ms =  0 s]
+
+
+Sortowanie przez WYBIERANIE: 
+[Function time: 5675 ms =  5 s]
+
+
+Sortowanie przez B且ELKOWE: 
+[Function time: 1321 ms =  1 s]
+
+
+Sortowanie przez SCALANIE: 
+[Function time: 4 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[left]: 
+[Function time: 1082 ms =  1 s]
+
+
+Sortowanie QUICK SORT x=a[(left+right)/2]: 
+[Function time: 6 ms =  0 s]
+
+
+++++++++++++++++++++++++++++++++++  LOSOWY +++++++++++++++++++++++++++++++++++++++:
+
+Sortowanie przez WSTAWIANIE: 
+[Function time: 927 ms =  0 s]
+
+
+Sortowanie przez WYBIERANIE: 
+[Function time: 5694 ms =  5 s]
+
+
+Sortowanie przez B且ELKOWE: 
+[Function time: 10281 ms =  10 s]
+
+
+Sortowanie przez SCALANIE: 
+[Function time: 8 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[left]: 
+[Function time: 17 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[(left+right)/2]: 
+[Function time: 11 ms =  0 s]
+
+
+++++++++++++++++++++++++++++++++++  NIEROSN丘Y ++++++++++++++++++++++++++++++++++:
+
+Sortowanie przez WSTAWIANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez WYBIERANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez B且ELKOWE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie przez SCALANIE: 
+[Function time: 0 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[left]: 
+[Function time: 2 ms =  0 s]
+
+
+Sortowanie QUICK SORT x=a[(left+right)/2]: 
+[Function time: 0 ms =  0 s]
+
+
+
+KONIEC!

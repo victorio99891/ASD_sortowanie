@@ -58,12 +58,12 @@ public class Main {
         System.out.println("CIAG LICZBOWY n = 100.000:");
         System.out.println("LOSOWY:");
         int[] losowy100000 = arrayGenerator.generujCiag(random, 100000);
-        printer.drukuj10(losowy1000, 100000);
+        printer.drukuj10(losowy100000, 100000);
         System.out.println("NIEMALEJACY:");
         int[] niemalejacy100000 = new QuickSort2().quickSort(losowy100000.clone(), stopWatch, printer);
         printer.drukuj10(niemalejacy100000, 100000);
         System.out.println("NIEROSNACY:");
-        int[] nierosnacy100000 = new SelectionSort().wybieranieOdwrotnieSort(losowy1000.clone(), stopWatch, printer);
+        int[] nierosnacy100000 = new SelectionSort().wybieranieOdwrotnieSort(losowy100000.clone(), stopWatch, printer);
         printer.drukuj10(nierosnacy100000, 100000);
 
 
@@ -270,10 +270,12 @@ public class Main {
         new MergeSort().mergeSort(nierosnacy100000.clone(), stopWatch, printer);
         System.out.println();
         System.out.println();
-        new QuickSortaL().quickSort(nierosnacy100000.clone(), stopWatch, printer);
+        int[] testowy = new QuickSortAnother().quickSort(nierosnacy100000.clone(), stopWatch, printer);
+        arrayGenerator.sprawdzCzyPosortowany(testowy);
+        // new QuickSortaL().quickSort(nierosnacy100000.clone(), stopWatch, printer);
         System.out.println();
         System.out.println();
-        new QuickSortaLR2().quickSort(nierosnacy100000.clone(), stopWatch, printer);
+        //new QuickSortaLR2().quickSort(nierosnacy100000.clone(), stopWatch, printer);
         System.out.println();
         System.out.println();
         System.out.println();
@@ -288,7 +290,10 @@ public class Main {
         int[] test454 = {4, 3, 2, 5, 7, 1, 9};
         int[] test3455 = {8, 4, 2, 1, 5, 6, 9, 3, 0, 7};
         int[] test23422 = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};*/
-
+        int[] test12 = {6, 4, 1, 9, 5, 3};
+        arrayGenerator.sprawdzCzyPosortowany(test12);
+        int[] test23 = {0, 1, 2, 3, 4, 5};
+        arrayGenerator.sprawdzCzyPosortowany(test23);
         /*System.out.println("Wygenerowany: ");
         printer.drukujListe(wygenerowany);
         System.out.println();

@@ -7,25 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bef970f3-4b10-4e45-b04d-f41e285ed9aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ASD_SORTOWANIE_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSort2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortaL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortaLR2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortAnother.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ASD_SORTOWANIE_jar/ASD_SORTOWANIE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ASD_SORTOWANIE_jar/ASD_SORTOWANIE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ASD_SORTOWANIE_jar/wyniki.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ASD_SORTOWANIE/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASD_SORTOWANIE/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASD_SORTOWANIE/pl/wiktor/alghoritms/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASD_SORTOWANIE/pl/wiktor/alghoritms/SelectionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASD_SORTOWANIE/pl/wiktor/printer/Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASD_SORTOWANIE/pl/wiktor/printer/Printer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASD_SORTOWANIE/pl/wiktor/alghoritms/QuickSortaL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASD_SORTOWANIE/pl/wiktor/alghoritms/QuickSortaL.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortaL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortaL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/wiktor/generator/ArrayGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/wiktor/generator/ArrayGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/wiktor/printer/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/wiktor/printer/Printer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,27 +28,37 @@
     <session id="-335030956">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2001" />
+          <entry key="java" value="2417" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2001" />
+          <entry key="JAVA" value="2417" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
-      <usages-collector id="statistics.file.extensions.open" />
-      <usages-collector id="statistics.file.types.open" />
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
+        </counts>
+      </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.vcs.git.usages" />
@@ -98,14 +98,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="68" column="2" selection-start-line="68" selection-end-line="257" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="483">
+              <caret line="295" column="53" selection-start-line="295" selection-start-column="53" selection-end-line="295" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -113,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/InsertionSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+            <state relative-caret-position="252">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/SelectionSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+            <state relative-caret-position="583">
+              <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/BubbleSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+            <state relative-caret-position="583">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,11 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/MergeSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="42">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -161,8 +155,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortaL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            <state relative-caret-position="226">
+              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortAnother.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,9 +177,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pl/wiktor/generator/ArrayGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortaLR2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="567">
               <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
             </state>
           </provider>
@@ -194,7 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pl/wiktor/generator/ArrayGenerator.java" />
         <option value="$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSort2.java" />
         <option value="$PROJECT_DIR$/src/pl/wiktor/printer/Printer.java" />
@@ -202,9 +216,11 @@
         <option value="$PROJECT_DIR$/src/pl/wiktor/alghoritms/SelectionSort.java" />
         <option value="$PROJECT_DIR$/src/pl/wiktor/alghoritms/BubbleSort.java" />
         <option value="$PROJECT_DIR$/src/pl/wiktor/alghoritms/MergeSort.java" />
-        <option value="$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortaL.java" />
         <option value="$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortaLR2.java" />
+        <option value="$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortaL.java" />
+        <option value="$PROJECT_DIR$/src/pl/wiktor/generator/ArrayGenerator.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortAnother.java" />
       </list>
     </option>
   </component>
@@ -215,9 +231,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -263,56 +279,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ASD_sortowanie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASD_sortowanie" type="462c0819:PsiDirectoryNode" />
+              <item name="ASD_SORTOWANIE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASD_SORTOWANIE" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ASD_sortowanie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASD_sortowanie" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASD_sortowanie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASD_sortowanie" type="462c0819:PsiDirectoryNode" />
+              <item name="ASD_SORTOWANIE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASD_SORTOWANIE" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ASD_sortowanie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASD_sortowanie" type="462c0819:PsiDirectoryNode" />
+              <item name="ASD_SORTOWANIE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASD_SORTOWANIE" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wiktor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ASD_sortowanie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASD_sortowanie" type="462c0819:PsiDirectoryNode" />
+              <item name="ASD_SORTOWANIE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASD_SORTOWANIE" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wiktor" type="462c0819:PsiDirectoryNode" />
               <item name="alghoritms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ASD_sortowanie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASD_sortowanie" type="462c0819:PsiDirectoryNode" />
+              <item name="ASD_SORTOWANIE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASD_SORTOWANIE" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wiktor" type="462c0819:PsiDirectoryNode" />
               <item name="generator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASD_sortowanie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASD_sortowanie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wiktor" type="462c0819:PsiDirectoryNode" />
-              <item name="printer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,7 +326,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="asd_sortowanie" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540856382293" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540891475830" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -379,17 +383,19 @@
       <workItem from="1540769536755" duration="1573000" />
       <workItem from="1540805906246" duration="30404000" />
       <workItem from="1540853066349" duration="2851000" />
+      <workItem from="1540857667171" duration="267000" />
+      <workItem from="1540888071958" duration="3210000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38913000" />
+    <option name="totallyTimeSpent" value="42390000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2880724" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1261745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -398,7 +404,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930845" />
-      <window_info active="true" anchor="bottom" x="0" y="23" width="1920" height="1017" id="Run" order="2" type="WINDOWED" visible="true" weight="0.273326" />
+      <window_info active="true" anchor="bottom" x="769" y="30" width="767" height="793" id="Run" order="2" type="WINDOWED" visible="true" weight="0.273326" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39942113" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -426,13 +432,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pl/wiktor/generator/ArrayGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
@@ -459,8 +458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/InsertionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+        <state relative-caret-position="252">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -469,8 +468,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        <state relative-caret-position="583">
+          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -479,8 +478,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/BubbleSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+        <state relative-caret-position="583">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -489,35 +488,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortaL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="42">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortaLR2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="567">
           <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/wiktor/generator/ArrayGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="68" column="2" selection-start-line="68" selection-end-line="257" selection-end-column="31" />
+        <state relative-caret-position="483">
+          <caret line="295" column="53" selection-start-line="295" selection-start-column="53" selection-end-line="295" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortaL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/wiktor/alghoritms/QuickSortAnother.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

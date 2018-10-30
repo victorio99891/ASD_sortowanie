@@ -2,29 +2,29 @@
 
 CIAG LICZBOWY n = 10:
 LOSOWY:
-[ 2214 893 3959 1270 1806 105 3595 28 4029 1985 ] n = 10 
+[ 2516 2230 1271 4498 155 1607 1038 610 764 2970 ] n = 10 
 NIEMALEJACY:
-[ 28 105 893 1270 1806 1985 2214 3595 3959 4029 ] n = 10 
+[ 155 610 764 1038 1271 1607 2230 2516 2970 4498 ] n = 10 
 NIEROSNACY:
-[ 4029 3959 3595 2214 1985 1806 1270 893 105 28 ] n = 10 
+[ 4498 2970 2516 2230 1607 1271 1038 764 610 155 ] n = 10 
 
 
 CIAG LICZBOWY n = 1.000:
 LOSOWY:
-[ 3829 2893 280 4352 1840 672 2669 1736 4193 1802 ... ] n = 1000 
+[ 3237 3118 3416 1183 370 1823 1890 1522 1650 2081 ... ] n = 1000 
 NIEMALEJACY:
-[ 1 1 14 15 16 22 24 26 27 37 ... ] n = 1000 
+[ 10 11 17 20 21 23 25 36 43 51 ... ] n = 1000 
 NIEROSNACY:
-[ 4530 4529 4527 4511 4499 4464 4460 4455 4452 4445 ... ] n = 1000 
+[ 4532 4530 4525 4518 4518 4517 4507 4506 4497 4496 ... ] n = 1000 
 
 
 CIAG LICZBOWY n = 100.000:
 LOSOWY:
-[ 3829 2893 280 4352 1840 672 2669 1736 4193 1802 ... ] n = 100000 
+[ 3237 3118 3416 1183 370 1823 1890 1522 1650 2081 ... ] n = 100000 
 NIEMALEJACY:
 [ 1 1 1 1 1 1 1 1 1 1 ... ] n = 100000 
 NIEROSNACY:
-[ 4530 4529 4527 4511 4499 4464 4460 4455 4452 4445 ... ] n = 100000 
+[ 4532 4530 4525 4518 4518 4517 4507 4506 4497 4496 ... ] n = 100000 
 
 
 
@@ -142,7 +142,7 @@ Sortowanie przez SCALANIE:
 
 
 Sortowanie QUICK SORT x=a[left]: 
-[Function time: 17 ms =  0 s]
+[Function time: 20 ms =  0 s]
 
 
 Sortowanie QUICK SORT x=a[(left+right)/2]: 
@@ -160,7 +160,7 @@ Sortowanie przez WYBIERANIE:
 
 
 Sortowanie przez B¥BELKOWE: 
-[Function time: 13 ms =  0 s]
+[Function time: 14 ms =  0 s]
 
 
 Sortowanie przez SCALANIE: 
@@ -178,7 +178,7 @@ Sortowanie QUICK SORT x=a[(left+right)/2]:
 ++++++++++++++++++++++++++++++++++  NIEROSN¥CY ++++++++++++++++++++++++++++++++++:
 
 Sortowanie przez WSTAWIANIE: 
-[Function time: 11 ms =  0 s]
+[Function time: 12 ms =  0 s]
 
 
 Sortowanie przez WYBIERANIE: 
@@ -194,7 +194,7 @@ Sortowanie przez SCALANIE:
 
 
 Sortowanie QUICK SORT x=a[left]: 
-[Function time: 11 ms =  0 s]
+[Function time: 13 ms =  0 s]
 
 
 Sortowanie QUICK SORT x=a[(left+right)/2]: 
@@ -217,11 +217,11 @@ Sortowanie przez WSTAWIANIE:
 
 
 Sortowanie przez WYBIERANIE: 
-[Function time: 5675 ms =  5 s]
+[Function time: 4994 ms =  4 s]
 
 
 Sortowanie przez B¥BELKOWE: 
-[Function time: 1321 ms =  1 s]
+[Function time: 1598 ms =  1 s]
 
 
 Sortowanie przez SCALANIE: 
@@ -229,37 +229,37 @@ Sortowanie przez SCALANIE:
 
 
 Sortowanie QUICK SORT x=a[left]: 
-[Function time: 1082 ms =  1 s]
+[Function time: 1108 ms =  1 s]
 
 
 Sortowanie QUICK SORT x=a[(left+right)/2]: 
-[Function time: 6 ms =  0 s]
+[Function time: 7 ms =  0 s]
 
 
 ++++++++++++++++++++++++++++++++++  LOSOWY +++++++++++++++++++++++++++++++++++++++:
 
 Sortowanie przez WSTAWIANIE: 
-[Function time: 927 ms =  0 s]
+[Function time: 1193 ms =  1 s]
 
 
 Sortowanie przez WYBIERANIE: 
-[Function time: 5694 ms =  5 s]
+[Function time: 4996 ms =  4 s]
 
 
 Sortowanie przez B¥BELKOWE: 
-[Function time: 10281 ms =  10 s]
+[Function time: 12771 ms =  12 s]
 
 
 Sortowanie przez SCALANIE: 
-[Function time: 8 ms =  0 s]
+[Function time: 10 ms =  0 s]
 
 
 Sortowanie QUICK SORT x=a[left]: 
-[Function time: 17 ms =  0 s]
+[Function time: 18 ms =  0 s]
 
 
 Sortowanie QUICK SORT x=a[(left+right)/2]: 
-[Function time: 11 ms =  0 s]
+[Function time: 12 ms =  0 s]
 
 
 ++++++++++++++++++++++++++++++++++  NIEROSN¥CY ++++++++++++++++++++++++++++++++++:

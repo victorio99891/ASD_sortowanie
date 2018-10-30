@@ -42,7 +42,7 @@ public class QuickSortaL {
         array[j] = tmp;
     }
 
-    private static <E> int partition(int array[], int begin, int end, Comparator<? super Integer> cmp) {
+    private static int partition(int array[], int begin, int end, Comparator<? super Integer> cmp) {
         //int index = (begin+end)/2;
         int index = begin;
         int pivot = array[index];

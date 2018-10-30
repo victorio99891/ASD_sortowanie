@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class MergeSort {
 
-    public void mergeSort(int[] ciag, StopWatch stopWatch, Printer printer) {
+    public int[] mergeSort(int[] ciag, StopWatch stopWatch, Printer printer) {
         int porownania = 0;
         int przesuniecia = 0;
         int[] array = ciag;
@@ -28,6 +28,8 @@ public class MergeSort {
         System.out.print("]\n");
         //printer.drukujSprawdzenie(array);
         stopWatch.reset();
+
+        return array;
     }
 
     public void sort(int arr[], int l, int r) {

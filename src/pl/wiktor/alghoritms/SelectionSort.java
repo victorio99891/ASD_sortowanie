@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class SelectionSort {
 
-    public void wybieranieSort(int[] ciag, StopWatch stopWatch, Printer printer) {
+    public int[] wybieranieSort(int[] ciag, StopWatch stopWatch, Printer printer) {
         int porownania = 0;
         int przesuniecia = 0;
         int zamiany = 0;
@@ -26,7 +26,7 @@ public class SelectionSort {
                     min_index = j;
                 }
                 porownania++;
-            zamiany++;
+                zamiany++;
 
             }
             przesuniecia++;
@@ -49,6 +49,8 @@ public class SelectionSort {
         //printer.drukujSprawdzenie(array);
         stopWatch.reset();
 
+        return array;
+
     }
 
     public int[] wybieranieOdwrotnieSort(int[] ciag, StopWatch stopWatch, Printer printer) {
@@ -69,7 +71,6 @@ public class SelectionSort {
             array[min_index] = array[i];
             array[i] = x;
         }
-
 
 
         return array;

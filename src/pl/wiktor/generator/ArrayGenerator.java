@@ -24,6 +24,26 @@ public class ArrayGenerator {
 
     }
 
+    public void sprawdzCzyPosortowanyODWROTNIE(int[] ciag) {
+        boolean posortowany = false;
+
+        for (int i = 1; i < ciag.length; i++) {
+            if (ciag[i - 1] < ciag[i]) {
+                posortowany = false;
+                break;
+            } else {
+                posortowany = true;
+            }
+        }
+
+        if (posortowany) {
+            System.out.println("POSORTOWANY!");
+        } else if (!posortowany) {
+            System.out.println("JAKIS BLAD!!!!!!!!!!!");
+        }
+
+    }
+
 
     public int[] generujCiag(Random rnd, int size) {
         int[] tmp = new int[size];

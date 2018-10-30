@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class QuickSortaL {
 
-    public void quickSort(int[] ciag, StopWatch stopWatch, Printer printer) {
+    public int[] quickSort(int[] ciag, StopWatch stopWatch, Printer printer) {
         int porownania = 0;
         int przesuniecia = 0;
         int zamiany = 0;
@@ -32,7 +32,7 @@ public class QuickSortaL {
         System.out.print("]\n");
         //printer.drukujSprawdzenie(array);
         stopWatch.reset();
-
+        return array;
     }
 
 

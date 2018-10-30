@@ -6,7 +6,7 @@ import pl.wiktor.printer.Printer;
 import java.util.concurrent.TimeUnit;
 
 public class InsertionSort {
-    public void wstawianieSort(int[] ciag, StopWatch stopWatch, Printer printer) {
+    public int[] wstawianieSort(int[] ciag, StopWatch stopWatch, Printer printer) {
         int porownania = 0;
         int przesuniecia = 0;
         int zamiany = 0;
@@ -33,7 +33,6 @@ public class InsertionSort {
             }
 
 
-
             zamiany++;
             porownania++;
             array[orderIndex + 1] = key;
@@ -49,6 +48,8 @@ public class InsertionSort {
         System.out.print("]\n");
         //printer.drukujSprawdzenie(array);
         stopWatch.reset();
+
+        return array;
     }
 
     public void insertionSort(int[] list, Printer printer) {

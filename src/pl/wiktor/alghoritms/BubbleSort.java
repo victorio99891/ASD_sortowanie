@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class BubbleSort {
 
-    public void bubbleSort(int[] ciag, StopWatch stopWatch, Printer printer) {
+    public int[] bubbleSort(int[] ciag, StopWatch stopWatch, Printer printer) {
         int porownania = 0;
         int przesuniecia = 0;
         int zamiany = 0;
@@ -42,5 +42,7 @@ public class BubbleSort {
         System.out.print("]\n");
         //printer.drukujSprawdzenie(array);
         stopWatch.reset();
+
+        return array;
     }
 }
